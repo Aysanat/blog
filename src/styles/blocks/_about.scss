@@ -2,22 +2,34 @@
   padding: 158px 0 71px
 }
 
+.about_inner {
+  @include inner;
+}
+
+.about_row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  column-gap: 115px;
+  align-items: center;
+}
+
 .about_title {
-  font-family: Heebo;
+  font-family: $font;
   font-size: 44px;
   font-weight: 700;
   line-height: 60px;
 }
 
 .about_text {
-  font-family: Heebo;
+  font-family: $font;
   font-size: 16px;
   font-weight: 400;
   line-height: 23.5px;
 }
 
 .about_btn a {
-  font-family: Heebo;
+  font-family: $font;
   font-size: 20px;
   font-weight: 500;
   line-height: 29.38px;

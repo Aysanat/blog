@@ -1,5 +1,42 @@
 .header {
   padding-top: 27px;
+
+  @media (max-width: $mobile-max) {
+    padding: 20px 0 12px;
+  }
+}
+
+.header_inner {
+  @include inner;
+}
+
+.header_burger {
+
+  @media (max-width: $mobile-max) {
+    margin-left: auto;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    border-top: 2px solid $color-black;
+    border-bottom: 2px solid $color-black;
+    border-right: none;
+    border-left: none;
+    background-color: inherit;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      margin: auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background-color: $color-black;
+    }
+  }
 }
 
 .menu_list {
@@ -8,10 +45,14 @@
   justify-content: flex-end;
   column-gap: 33px;
   list-style: none;
+
+  @media (max-width: $mobile-max) {
+    display: none;
+  }
 }
 
 .menu_item a {
-  font-family: Heebo;
+  font-family: $font;
   font-size: 20px;
   font-weight: 500;
   line-height: 29.38px;
