@@ -1,0 +1,20 @@
+.header {
+  padding-top: 27px;
+}
+
+.menu_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  column-gap: 33px;
+  list-style: none;
+}
+
+.menu_item a {
+  font-family: Heebo;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 29.38px;
+  text-decoration: none;
+  color: black;
+}
