@@ -10,12 +10,31 @@
 .posts_row {
   display: flex;
   flex-direction: row;
+
+  @media (max-width: $mobile-max) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.posts_text {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 60px;
+
+  @media (max-width: $mobile-max) {
+    font-size: 18px;
+  }
 }
 
 .posts_link {
   margin-left: auto;
   text-decoration: none;
   color: #00A8CC;
+
+  @media (max-width: $mobile-max) {
+    margin: 0;
+  }
 }
 
 .posts_list {
@@ -23,6 +42,11 @@
   display: flex;
   column-gap: 20px;
   list-style: none;
+
+  @media (max-width: $mobile-max) {
+    flex-direction: column;
+    row-gap: 17px;
+  }
 }
 
 .posts_item {
@@ -31,12 +55,21 @@
   flex-direction: column;
   row-gap: 17px;
   background-color: #fff;
+
+  @media (max-width: $mobile-max) {
+    row-gap: 12px;
+  }
 }
 
 .posts_title {
   font-size: 26px;
   font-weight: 700;
   line-height: 38.19px;
+
+  @media (max-width: $mobile-max) {
+    font-size: 22px;
+    line-height: 30px;
+  }
 }
 
 .posts_info {
@@ -46,10 +79,24 @@
 .posts_date {
   padding-right: 26px;
   border-right: 1px solid $color-black;
+
+  @media (max-width: $mobile-max) {
+    padding-right: 24px;
+  }
 }
 
 .posts_place {
   padding-left: 26px;
+
+  @media (max-width: $mobile-max) {
+    padding-left: 24px;
+  }
+}
+
+.posts_desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.5px;
 }
 
 
