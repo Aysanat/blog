@@ -1,0 +1,52 @@
+.detail {
+  padding-top: 78px;
+}
+
+.detail_inner {
+  @include inner;
+}
+
+.detail_title {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 49.94px;
+}
+
+.detail_info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 26px;
+}
+
+.detail_year {
+  padding: 0 10px;
+  text-align: center;
+  color: #fff;
+  background-color: #FF7C7C;
+  border-radius: 16px;
+}
+
+.detail_trip {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29.38px;
+  color: $color-gray;
+}
+
+.detail_text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.5px;
+}
+
+.detail_content {
+  position: relative;
+}
+
+.detail_visual {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
