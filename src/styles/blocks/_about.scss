@@ -1,5 +1,9 @@
 .about {
-  padding: 158px 0 71px
+  padding: 158px 0 71px;
+
+  @media (max-width: $mobile-max) {
+    padding: 33px 0 60px;
+  }
 }
 
 .about_inner {
@@ -12,6 +16,13 @@
   flex-wrap: nowrap;
   column-gap: 115px;
   align-items: flex-start;
+
+
+  @media (max-width: $mobile-max) {
+    flex-direction: column-reverse;
+    row-gap: 34px;
+    text-align: center;
+  }
 }
 
 .about_desc {
@@ -19,10 +30,19 @@
   display: flex;
   flex-direction: column;
   row-gap: 40px;
+
+  @media (max-width: $mobile-max) {
+    row-gap: 21px;
+  }
 }
 
 .about_content {
   margin-left: auto;
+
+  @media (max-width: $mobile-max) {
+    margin: 0;
+    align-self: center;
+  }
 }
 
 .about_visual {
@@ -34,6 +54,11 @@
   font-size: 44px;
   font-weight: 700;
   line-height: 60px;
+
+  @media (max-width: $mobile-max) {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 
 .about_text {
