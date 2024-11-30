@@ -1,0 +1,11 @@
+.footer {
+  padding: 32px 0 32px;
+}
+
+.footer_inner {
+  @include inner;
+}
+
+.footer_empty {
+  margin: 265px 0
+}

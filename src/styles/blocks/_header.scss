@@ -11,7 +11,6 @@
 }
 
 .header_burger {
-
   @media (max-width: $mobile-max) {
     margin-left: auto;
     position: relative;
@@ -58,4 +57,10 @@
   line-height: 29.38px;
   text-decoration: none;
   color: black;
+  transition: color .3s;
+
+  &:hover {
+    color: $color-accent;
+    transform: translate();
+  }
 }

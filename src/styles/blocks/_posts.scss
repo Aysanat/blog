@@ -1,0 +1,55 @@
+.posts {
+  padding: 27px 0 32px;
+  background-color: $color-light;
+}
+
+.posts_inner {
+  @include inner;
+}
+
+.posts_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.posts_link {
+  margin-left: auto;
+  text-decoration: none;
+  color: #00A8CC;
+}
+
+.posts_list {
+  margin-top: 22px;
+  display: flex;
+  column-gap: 20px;
+  list-style: none;
+}
+
+.posts_item {
+  padding: 23px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 17px;
+  background-color: #fff;
+}
+
+.posts_title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 38.19px;
+}
+
+.posts_info {
+  display: flex;
+}
+
+.posts_date {
+  padding-right: 26px;
+  border-right: 1px solid $color-black;
+}
+
+.posts_place {
+  padding-left: 26px;
+}
+
+
